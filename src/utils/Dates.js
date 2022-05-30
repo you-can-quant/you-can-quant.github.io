@@ -4,7 +4,7 @@ function date(delta_months=0) {
     const target_date = new Date(
         today.getFullYear(),
         today.getMonth() - delta_months,
-        today.getDate()
+        1
       )
     
       const target_year = String(target_date.getFullYear());
@@ -22,7 +22,7 @@ function date(delta_months=0) {
       const target_date_plus_one_month = new Date(
         target_date.getFullYear(),
         target_date.getMonth() + 1,
-        target_date.getDate()
+        1
       )
   
       const next_year = String(target_date_plus_one_month.getFullYear());

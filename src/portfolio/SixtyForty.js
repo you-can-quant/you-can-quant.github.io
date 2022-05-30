@@ -6,6 +6,7 @@ function SixtyForty(props) {
     const title = '60/40 포트폴리오';
     const description = '연 복리 수익률 9.8%, MDD -29.5%';
     const today = new Date();
+    console.log(today.toDateString());
 
     const spy_price = stock['SPY']['price'];
     const ief_price = stock['IEF']['price'];
