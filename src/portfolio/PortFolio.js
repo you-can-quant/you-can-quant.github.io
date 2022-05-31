@@ -101,7 +101,7 @@ function Details(props) {
     <div className="grid grid-cols-2 gap-2 mt-2">
       {
         portfolio.map(arr => 
-          <div className='text-center bg-white rounded-md border-2 border-gray-200 shadow-md'>
+          <div className='text-center bg-white rounded-md shadow-md'>
             <div className='text-lg font-semibold'>{arr[0] + ' ' + arr[2] + '%'}</div>
             <div className='text-sm text-gray-600'>{arr[1]}</div>
           </div>

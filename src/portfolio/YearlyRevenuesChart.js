@@ -52,7 +52,8 @@ const YearlyRevenuesChart = (props) => {
         <Line
             data={data}
             options={options}
-            height={100}
+            height={130}
+            className="shadow-md rounded-md"
         />
     );
 
