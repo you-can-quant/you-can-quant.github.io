@@ -59,8 +59,6 @@ function GTAA(props) {
         ["VNQ", stock["VNQ"]['description'], (vnq_monthly_prices[i] > vnq_10_month_moving_average ? 20 : 0)],
       ]);
     }
-
-    console.log(title, revenues_monthly);
       
     return <PortFolio title={title} description={description} revenues_monthly={revenues_monthly} portfolio={portfolio} />
 }

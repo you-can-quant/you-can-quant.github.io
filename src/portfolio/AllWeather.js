@@ -62,8 +62,6 @@ function AllWeather(props) {
       ["EMLC", stock["EMLC"]['description'], 7],
     ]);
 
-    console.log(title, revenues_monthly);
-
     return <PortFolio title={title} description={description} revenues_monthly={revenues_monthly} portfolio={portfolio} />
 }
 

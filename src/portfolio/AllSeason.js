@@ -44,8 +44,6 @@ function AllSeason(props) {
       ["GLD", stock["GLD"]['description'], 7.5],
       ["DBC", stock["DBC"]['description'], 7.5],
     ]);
-
-    console.log(title, revenues_monthly);
       
     return <PortFolio title={title} description={description} revenues_monthly={revenues_monthly} portfolio={portfolio} />
 }

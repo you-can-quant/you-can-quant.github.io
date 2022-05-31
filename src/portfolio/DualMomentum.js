@@ -48,7 +48,6 @@ function DualMomentum(props) {
       portfolio.push(cur_portfolio);
     }
 
-    console.log(title, revenues_monthly);
   
     return <PortFolio title={title} description={description} revenues_monthly={revenues_monthly} portfolio={portfolio} />
 }

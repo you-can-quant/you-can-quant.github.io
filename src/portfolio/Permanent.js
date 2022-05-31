@@ -40,8 +40,6 @@ function Permanent(props) {
       ["GLD", stock["GLD"]['description'], 25], 
       ["BIL", stock["BIL"]['description'], 25]
     ]);
-
-    console.log(title, revenues_monthly);
       
     return <PortFolio title={title} description={description} revenues_monthly={revenues_monthly} portfolio={portfolio} />
 }

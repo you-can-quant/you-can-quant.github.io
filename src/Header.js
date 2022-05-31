@@ -23,7 +23,14 @@ function Header() {
 
         <div class="text-center bg-gray-50 py-20 px-6 relative overflow-hidden bg-no-repeat bg-cover" style={style}>
             <h1 class="pt-6 text-white text-5xl font-bold mt-10 mb-2">할 수 있다! 퀀트 투자</h1>
+            
+            <div class="flex space-x-2 justify-center">
+                <button type="button" class="inline-block px-6 py-2.5 mt-4 bg-blue-600 text-white font-bold text-md rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">
+                    <a href="https://forms.gle/sCNy9Fs5DYoM8s689">3초 안에 베타테스트 신청하기 클릭!</a>
+                </button>
+            </div>
         </div>
+
         </header>
     )
 }
