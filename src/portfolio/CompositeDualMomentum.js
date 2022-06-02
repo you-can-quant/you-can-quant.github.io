@@ -79,6 +79,9 @@ function CompositeDualMomentum(props) {
       }
 
       revenues_monthly.push(revenue_monthly_total);
+      if (cur_portfolio.length < 4) {
+        cur_portfolio.push(["현금", "현금", 25 * (4 - cur_portfolio.length)]);
+      }
       portfolio.push(cur_portfolio);
     }
   

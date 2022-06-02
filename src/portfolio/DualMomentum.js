@@ -3,7 +3,7 @@ import PortFolio from "./PortFolio";
 
 function DualMomentum(props) {
     const stock = props.stock
-    const title = '듀얼 모멘텀';
+    const title = '전통 듀얼 모멘텀';
     const description = '연 복리 수익률 15.1%, MDD -19.6%';
     const today = new Date();
   

@@ -51,13 +51,19 @@ function GTAA(props) {
         revenue_monthly(vnq_price, i) * (vnq_monthly_prices[i] > vnq_10_month_moving_average ? 20 : 0);  
    
       revenues_monthly.push(revenue_montly_total);
-      portfolio.push([
+
+      let cur_portfolio = [
         ["SPY", stock["SPY"]['description'], (spy_monthly_prices[i] > spy_10_month_moving_average ? 20 : 0)],
         ["EFA", stock["EFA"]['description'], (efa_monthly_prices[i] > efa_10_month_moving_average ? 20 : 0)],
         ["IEF", stock["IEF"]['description'], (ief_monthly_prices[i] > ief_10_month_moving_average ? 20 : 0)],
         ["DBC", stock["DBC"]['description'], (dbc_monthly_prices[i] > dbc_10_month_moving_average ? 20 : 0)],
         ["VNQ", stock["VNQ"]['description'], (vnq_monthly_prices[i] > vnq_10_month_moving_average ? 20 : 0)],
-      ]);
+      ];
+      cur_portfolio = cur_portfolio.filter(value => value[2] > 0);
+      if (cur_portfolio.length < 5) {
+        cur_portfolio.push(["현금", "현금", 20 * (5 - cur_portfolio.length)]);
+      }
+      portfolio.push(cur_portfolio);
     }
       
     return <PortFolio title={title} description={description} revenues_monthly={revenues_monthly} portfolio={portfolio} />
