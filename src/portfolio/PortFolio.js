@@ -6,8 +6,8 @@ function PortFolio(props) {
     const revenues = props.revenues_monthly.filter(function (value) {
       return !Number.isNaN(value);
     });
-    const revenue_monthly = revenues[0].toFixed(1);
-    const revenue_yearly = revenues.reduce((a, b) => a + b, 0).toFixed(1);
+    const revenue_monthly = revenues[0].toFixed(2);
+    const revenue_yearly = revenues.reduce((a, b) => a + b, 0).toFixed(2);
     const portfolio = props.portfolio[0];
     // console.log(props.title, portfolio);
 
@@ -112,7 +112,7 @@ function Details(props) {
 }
 
 function randomInRange(min, max) {
-  return (Math.random() * (max - min) + min).toFixed(3);
+  return (Math.random() * (max - min) + min).toFixed(2);
 }
 
 export default PortFolio;
